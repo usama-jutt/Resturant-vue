@@ -17,15 +17,15 @@
           </div>
         </div>
       </div>
-      <form class="sign-up" action="#">
+      <form class="sign-up">
         <h2>Registration</h2>
         <div>Enter your name, email and password</div>
         <input type="text" v-model="name" placeholder="Name" />
         <input type="email" v-model="email" placeholder="Email" />
         <input type="password" v-model="password" placeholder="Password" />
-        <button v-on:click="abc" >Sign Up</button>
+        <button><router-link to="/" v-on:click="abc" >Sign Up</router-link></button>
       </form>
-      <form class="sign-in" action="#">
+      <form class="sign-in">
         <h2>Sign In</h2>
         <div>Login</div>
         <input type="email" placeholder="Email" />
@@ -62,10 +62,12 @@ import axios from 'axios'
                 password:this.password
             });
             console.warn(result);
+            console.log(result.status)
             if (result.status == 201)
             {
                 alert("You have successfully created account")
                 localStorage.setItem("user-info", JSON.stringify(result.abc))
+                // this.$router.push({name:'Home'})
             }
             
         }
@@ -160,6 +162,7 @@ import axios from 'axios'
     background-color: transparent;
     border-color: #fff;
   }
+  
   form {
     position: absolute;
     top: 0;
