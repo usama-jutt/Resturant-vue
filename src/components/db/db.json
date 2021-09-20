@@ -1,0 +1,40 @@
+{
+  "User": [
+    {
+      "name": "Junaid Tariq",
+      "email": "junaid@gmai.com",
+      "password": "zxc@123",
+      "id": 1
+    },
+    {
+      "name": "Muhammad Anas",
+      "email": "anas@gmail.com",
+      "password": "usama123",
+      "id": 2
+    },
+    {
+      "name": "Hashim",
+      "email": "hashim@gmail.com",
+      "password": "hashim123",
+      "id": 3
+    },
+    {
+      "name": "Talha",
+      "email": "talhamobin313@gmail.com",
+      "password": "123123",
+      "id": 4
+    },
+    {
+      "name": "123",
+      "email": "123",
+      "password": "asd",
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 6
+    }
+  ]
+}
